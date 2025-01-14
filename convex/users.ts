@@ -42,20 +42,20 @@ export const getUser = query({
   },
 });
 
-export const upgradeToPro = mutation({
-  args: {
-    email: v.string(),
-    lemonSqueezyCustomerId: v.string(),
-    lemonSqueezyOrderId: v.string(),
-    amount: v.number(),
-  },
-  handler: async (ctx, args) => {
-    const user = await ctx.db
-      .query("users")
-      .filter((q) => q.eq(q.field("email"), args.email))
-      .first();
+// export const upgradeToPro = mutation({
+//   args: {
+//     email: v.string(),
+//     lemonSqueezyCustomerId: v.string(),
+//     lemonSqueezyOrderId: v.string(),
+//     amount: v.number(),
+//   },
+//   handler: async (ctx, args) => {
+//     const user = await ctx.db
+//       .query("users")
+//       .filter((q) => q.eq(q.field("email"), args.email))
+//       .first();
 
-    if (!user) throw new Error("User not found");
+//     if (!user) throw new Error("User not found");
 
     // await ctx.db.patch(user._id, {
     //   isPro: true,
@@ -64,6 +64,6 @@ export const upgradeToPro = mutation({
     //   lemonSqueezyOrderId: args.lemonSqueezyOrderId,
     // });
 
-    return { success: true };
-  },
-});
+    // return { success: true };
+  // },
+// });
