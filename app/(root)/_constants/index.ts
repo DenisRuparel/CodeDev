@@ -221,6 +221,7 @@ func main() {
 #include <vector>
 #include <algorithm>
 #include <numeric>
+using namespace std;
 
 int main() {
     // Create vector
