@@ -1,7 +1,10 @@
+"use client";
 // import { Blocks } from "lucide-react";
 import Link from "next/link";
+import FooterContent from "./FooterContent";
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="relative border-t border-gray-800/50 mt-auto">
       <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-gray-900 to-transparent" />
@@ -11,10 +14,10 @@ function Footer() {
             {/* <Blocks className="size-5" /> */}
             <span className="text-gray-400 font-bold text-lg">
                 {"</>"}</span>
-            <span>Built for developers, by developers</span>
+            <span>Copyright &copy; {year} by <span>CodeDev</span> | All Rights Reserved</span>
           </div>
-          <div className="flex items-center gap-6">
-            <Link href="/support" className="text-gray-400 hover:text-gray-300 transition-colors">
+          {/* <div className="flex items-center gap-6"> */}
+            {/* <Link href="/support" className="text-gray-400 hover:text-gray-300 transition-colors">
               Support
             </Link>
             <Link href="/privacy" className="text-gray-400 hover:text-gray-300 transition-colors">
@@ -22,8 +25,9 @@ function Footer() {
             </Link>
             <Link href="/terms" className="text-gray-400 hover:text-gray-300 transition-colors">
               Terms
-            </Link>
-          </div>
+            </Link> */}
+            <FooterContent />
+          {/* </div> */}
         </div>
       </div>
     </footer>
