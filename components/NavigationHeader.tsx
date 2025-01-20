@@ -1,6 +1,5 @@
 import HeaderProfileBtn from "@/app/(root)/_components/HeaderProfileBtn";
-import { SignedOut } from "@clerk/nextjs";
-import { Blocks, Code2, Sparkles } from "lucide-react";
+import { Code2 } from "lucide-react";
 import Link from "next/link";
 
 function NavigationHeader() {
@@ -20,7 +19,6 @@ function NavigationHeader() {
 
               {/* Logo */}
               <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0f] p-2 rounded-xl ring-1 ring-white/10 group-hover:ring-white/20 transition-all">
-                {/* <Blocks className="w-6 h-6 text-blue-400 transform -rotate-6 group-hover:rotate-0 transition-transform duration-500" /> */}
                 <span className="text-blue-400 font-bold text-lg transform -rotate-6 group-hover:rotate-0 transition-transform duration-500">
                 {"</>"}</span>
               </div>
@@ -57,21 +55,7 @@ function NavigationHeader() {
 
           {/* right rection */}
           <div className="flex items-center gap-4">
-            {/* <SignedOut>
-              <Link
-                href="/pricing"
-                className="flex items-center gap-2 px-4 py-1.5 rounded-lg border border-amber-500/20
-                 hover:border-amber-500/40 bg-gradient-to-r from-amber-500/10 
-                to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 transition-all 
-                duration-300"
-              >
-                <Sparkles className="w-4 h-4 text-amber-400 hover:text-amber-300" />
-                <span className="text-sm font-medium text-amber-400/90 hover:text-amber-300">
-                  Pro
-                </span>
-              </Link>
-            </SignedOut> */}
-
+            
             {/* profile button */}
             <HeaderProfileBtn />
           </div>

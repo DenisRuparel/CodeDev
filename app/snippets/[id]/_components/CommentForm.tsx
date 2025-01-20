@@ -1,4 +1,4 @@
-import { CodeIcon, SendIcon, Info } from "lucide-react";
+import { CodeIcon, SendIcon } from "lucide-react";
 import { useState } from "react";
 import CommentContent from "./CommentContent";
 import HoverIcon from "@/components/HoverIcon";
@@ -78,7 +78,6 @@ function CommentForm({ isSubmitting, onSubmit }: CommentFormProps) {
             <div className="text-[#808086]/60 pl-5">
               <span className="flex items-center space-x-1">
                 <span>Tab key inserts spaces • Preview your comment before posting</span>
-                {/* <Info className="w-4 h-4 text-[#cac82f]" /> */}
                 <HoverIcon/>
               </span>
             </div>

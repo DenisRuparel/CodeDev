@@ -1,6 +1,4 @@
 "use client";
-// import { Blocks } from "lucide-react";
-import Link from "next/link";
 import FooterContent from "./FooterContent";
 
 function Footer() {
@@ -16,18 +14,7 @@ function Footer() {
                 {"</>"}</span>
             <span>Copyright &copy; {year} by <span>CodeDev</span> | All Rights Reserved</span>
           </div>
-          {/* <div className="flex items-center gap-6"> */}
-            {/* <Link href="/support" className="text-gray-400 hover:text-gray-300 transition-colors">
-              Support
-            </Link>
-            <Link href="/privacy" className="text-gray-400 hover:text-gray-300 transition-colors">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-gray-300 transition-colors">
-              Terms
-            </Link> */}
             <FooterContent />
-          {/* </div> */}
         </div>
       </div>
     </footer>
