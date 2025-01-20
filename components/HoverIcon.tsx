@@ -28,8 +28,8 @@ const HoverIcon = () => {
                                 <br />
                                 Example: <br />
                                 ```javascript       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # language name<br />
-                                const name = "John"; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # code<br />
-                                ````
+                                const name = "John"; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # code<br />
+                                ```
                         </p>
                     </div>
                 </div>
