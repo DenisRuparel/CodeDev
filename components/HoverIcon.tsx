@@ -24,12 +24,12 @@ const HoverIcon = () => {
                         <h4 className="text-sm font-semibold">@CodeDev</h4>
                         <p className="text-sm">
                             when you want to comment some code/program you should follow this format:
-                            <br/>
-                                <br />
-                                Example: <br />
-                                ```javascript       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # language name<br />
-                                const name = "John"; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # code<br />
-                                ```
+                            <br />
+                            <br />
+                            Example:<br />
+                            ```javascript<br />
+                            const name = "John";<br />
+                            ```
                         </p>
                     </div>
                 </div>
