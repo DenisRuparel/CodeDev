@@ -1,6 +1,6 @@
 import { useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
-import { Activity, Code2, Star, Timer, TrendingUp, Trophy, UserIcon, BadgeCheck } from "lucide-react";
+import { Activity, Code2, Star, Timer, TrendingUp, Trophy, UserIcon, BadgeCheck, User } from "lucide-react";
 import { motion } from "framer-motion";
 import { Id } from "../../../convex/_generated/dataModel";
 
@@ -87,12 +87,19 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
             className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full 
           blur-xl opacity-50 group-hover:opacity-75 transition-opacity"
           />
-          <Image
-            src={user.imageUrl}
-            alt="Profile"
-            width={100}
-            height={100}
-            className="w-24 h-24 rounded-full border-4 border-gray-800/50 relative z-10 group-hover:scale-105 transition-transform"/>
+          {user.imageUrl ? (
+            <Image
+              src={user.imageUrl}
+              alt="Profile"
+              width={100}
+              height={100}
+              className="w-24 h-24 rounded-full border-4 border-gray-800/50 relative z-10 group-hover:scale-105 transition-transform"
+            />
+          ) : (
+            <div className="flex items-center justify-center h-full w-full bg-gray-300">
+              <User className="w-12 h-12 text-gray-500" />
+            </div>
+          )}
           {userData && (
             <div
               className="absolute -top-2 -right-2 bg-gradient-to-r from-green-600 to-green-700 p-2
